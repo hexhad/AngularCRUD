@@ -1,0 +1,24 @@
+<p>{{data.myVar}}</p>
+
+<mat-dialog-content>
+
+    
+<p>
+  <mat-form-field appearance="outline">
+    <mat-label>Enter ID</mat-label>
+    <input matInput [(ngModel)]="id" placeholder="Placeholder">
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field appearance="outline">
+    <mat-label>Enter Name</mat-label>
+    <input matInput [(ngModel)]="name" placeholder="Placeholder">
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+<button mat-stroked-button (click)="save()">Submit</button>
+<button mat-stroked-button marra color="warn" (click)="exit()">Cancel</button>
+</mat-dialog-actions>
